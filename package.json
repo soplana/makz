@@ -25,7 +25,8 @@
     "watchify": "*",
     "gulp-babel": "^4.0.0",
     "cron": "*",
-    "request" : "*"
+    "request" : "*",
+    "moment-timezone" : "*"
   },
   "scripts": {
     "watch": "gulp watch"
