@@ -42,5 +42,5 @@ slackで起動する
 
 デーモン化には`forever`を使用しています
 ```
-$ ENV=production ./run.sh
+$ MAKZ_ENV=production ./run.sh
 ```
