@@ -2,6 +2,9 @@
 家庭用slackに常駐させると便利なhubot
 
 ## 機能
+### AsanaのTask通知
+本日期限のAsanaに登録されているタスクの通知をしてくれます
+
 ### アニメ通知
 [今期のアニメ](http://konkinoani.me/user/crifff)に登録されているアニメを通知してくれます
 
@@ -9,7 +12,7 @@
 毎朝8:15に今日の天気と気温を知らせてくれます
 
 ### おしゃべり機能
-話しかけると答えてくれます  
+話しかけると答えてくれます
 ドコモの[雑談対話API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_name=dialogue&p_name=api_usage_scenario)を利用しています
 
 ## 起動
@@ -26,6 +29,9 @@ export HUBOT_SLACK_TOKEN=xxxxxxxxxxxxxxxx
 
 # docomo APIのToken
 export HUBOT_DOCOMO_DIALOGUE_API_KEY=xxxxxxxxxxxxxxx
+
+# Asana APIのToken
+export HUBOT_ASANA_TOKEN=xxxxxxxxxxxxxxx
 ```
 
 起動スクリプトに実行権限を与えます
@@ -41,7 +47,7 @@ shellで起動する
 $ ./run.sh
 ```
 
-slackで起動する  
+slackで起動する
 
 デーモン化には`forever`を使用しています
 ```
