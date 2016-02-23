@@ -26,7 +26,8 @@
     "gulp-babel": "^4.0.0",
     "cron": "*",
     "request" : "*",
-    "moment-timezone" : "*"
+    "moment-timezone" : "*",
+    "asana" : "*"
   },
   "scripts": {
     "watch": "gulp watch"
