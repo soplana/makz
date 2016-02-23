@@ -49,7 +49,7 @@ function weather(robot) {
 };
 
 module.exports = function (robot) {
-  new cron("15 8 * * *", function () {
+  new cron("15 7 * * *", function () {
     weather(robot);
   }).start();
 };

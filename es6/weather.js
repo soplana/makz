@@ -7,10 +7,10 @@ var ops = {
 };
 
 var emoji = {
-  "晴れ" : ":sunny:",
+  "晴れ" :     ":sunny:",
   "晴時々曇" : ":sun_behind_cloud:",
-  "曇り" : ":cloud:",
-  "雨" : ":rain_cloud:",
+  "曇り" :     ":cloud:",
+  "雨" :       ":rain_cloud:",
   "晴のち曇" : ":sun_behind_cloud:",
   "雨のち曇" : ":rain_cloud:",
   "曇のち晴" : ":sun_small_cloud:",
@@ -49,5 +49,5 @@ function weather(robot){
 };
 
 module.exports = (robot)=>{
-  new cron("15 8 * * *", ()=>{weather(robot)}).start()
+  new cron("15 7 * * *", ()=>{weather(robot)}).start()
 };
